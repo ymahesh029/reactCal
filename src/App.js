@@ -1,63 +1,43 @@
-import logo from './logo.svg';
-
-import { useReducer } from 'react';
+// import { useState } from 'react';
+// import { useReducer } from 'react';
 import './App.css';
-import './styles.css'
+// import './styles.css'
+// import MangesState from './compo/mangesState'
+// import Redu from './compo/redu';
+// import Todo from './compo/Todo/todo';
+// import Cal from './compo/cal/Cal'
+// import Ref from './compo/ref/Ref'
+// import Usetate from './compo/allHooks/Usetate';
 
+import Theme from './compo/context/Theme';
 
-const ACTIONS = {
-  ADD_DIGIT: 'add-digit',
-  CLEAR:'clear',
-  CHOOSE_OPRATION:'chose_opration',
-  DELETE_DIGIT:'delete_digit',
-  EVALUATE:'evalueate'
+import Apps from './compo/Component/Apps';
 
-
-}
-function reduser (state, {type,paylod}){
-  switch (type){
-    case ACTIONS.ADD_DIGIT:
-      return null
-  }
-  
-
-}
 function App() {
 
-  const   [{currentOprent, previouseOprent, opration},dispatch]= useReducer(reduser,{})
-  // alert(currentOprent)
-  dispatch({type:ACTIONS.ADD_DIGIT,paylod:{digit:1}})
   return (
-    <div className="calculator-grid">
+    <div className='center' >
+      
 
-      <div className="output">
+{/* <Apps></Apps> */}
 
-        <div className="previous-operand">{previouseOprent} {opration}</div>
-        <div className="current-operand">{currentOprent}</div>
-        
-      </div>
 
-<button  className="span-two">AC</button>
-<button >DEL</button>
-<button >/</button>
 
-<button >1</button>
-<button >2</button>
-<button >3</button>
-<button >*</button>
-<button >4</button>
-<button >5</button>
-<button >6</button>
-<button >+</button>
-<button >7</button>
-<button >8</button>
-<button >9</button>
+{/* <Theme></Theme> */}
+{/* <Usetate></Usetate> */}
 
-<button >-</button>
-<button >.</button>
-<button >0</button>
 
-<button className="span-two">=</button>
+
+      {/* <Todo></Todo> */}
+      {/* <MangesState></MangesState>
+      <Redu></Redu> */}
+
+     
+
+       {/* <Cal></Cal> */}
+
+       {/* <Ref></Ref> */}
+      
 
 
 
